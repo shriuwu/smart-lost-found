@@ -33,10 +33,7 @@ const db = getFirestore(app);
 const functions = getFunctions(app, "us-central1");
 
 // 🔹 FORCE correct storage bucket (important)
-const storage = getStorage(
-  app,
-  "gs://smart-lost-found-2d107.firebasestorage.app"
-);
+const storage = getStorage(app);
 
 
 console.log("APP.JS LOADED");
