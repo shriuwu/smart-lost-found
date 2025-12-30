@@ -23,7 +23,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyDx49M5ImOjRKbZb4WmYdJrJ2jt9JZ1sSs",
   authDomain: "smart-lost-found-2d107.firebaseapp.com",
   projectId: "smart-lost-found-2d107",
-  storageBucket: "smart-lost-found-2d107.appspot.com"
+  storageBucket: "smart-lost-found-2d107.firebasestorage.app"
 };
 
 // 🔹 Initialize Firebase
@@ -35,8 +35,9 @@ const functions = getFunctions(app, "us-central1");
 // 🔹 FORCE correct storage bucket (important)
 const storage = getStorage(
   app,
-  "gs://smart-lost-found-2d107.appspot.com"
+  "gs://smart-lost-found-2d107.firebasestorage.app"
 );
+
 
 console.log("APP.JS LOADED");
 
