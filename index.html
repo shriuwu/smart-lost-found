@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="icon" href="/favicon.ico">
+<script type="module" src="/app.js"></script>
+
+  <title>Smart Lost & Found (AI)</title>
+</head>
+<body>
+
+  <h2>Smart Lost & Found – AI Demo</h2>
+
+  <button onclick="login()">Login</button>
+
+  <h3>Analyze Found Item</h3>
+
+  <!-- FILE UPLOAD (THIS IS REQUIRED) -->
+  <input type="file" id="imageFile" accept="image/*"><br><br>
+
+  <!-- LOCATION -->
+  <input type="text" id="location" placeholder="Found location"><br><br>
+
+  <button onclick="analyzeItem()">Analyze Image</button>
+
+  <!-- VERY IMPORTANT -->
+  <script type="module" src="./app.js"></script>
+
+</body>
+</html>
